@@ -32,6 +32,13 @@ namespace WpfApplication1
             this.Close(); //only if you want to close the current form.
         }
 
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            var newForm = new MainWindow(); //create your new form.
+            newForm.Show(); //show the new form.
+            this.Close();
+        }
+
 
     }
 }

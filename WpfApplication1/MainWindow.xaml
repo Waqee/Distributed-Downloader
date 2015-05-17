@@ -3,16 +3,16 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="MainWindow" Height="577.611" Width="1043.284">
     <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="308*"/>
-            <ColumnDefinition Width="37*"/>
-        </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="85*"/>
-            <RowDefinition Height="462*"/>
+            <RowDefinition Height="90*"/>
+            <RowDefinition Height="457*"/>
         </Grid.RowDefinitions>
-        <StackPanel Grid.Column="1" HorizontalAlignment="Left" Height="462" Margin="1,0,0,0" Grid.Row="1" VerticalAlignment="Top" Width="110"/>
-        <Label Content="Currently&#xD;Connected&#xA;" Grid.Column="1" HorizontalAlignment="Left" Margin="1,0,0,0" VerticalAlignment="Bottom" Height="85" Width="110" FontSize="20"/>
+        <Grid>
+            <Button Content="Add" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="98" Height="90" FontSize="24" Click="Button_Click"/>
+        </Grid>
+        <Grid Grid.Row="1">
+            <TreeView x:Name="DownloadTree"/>
+        </Grid>
 
     </Grid>
 </Window>
